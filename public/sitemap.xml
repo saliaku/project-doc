@@ -3,15 +3,25 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/docs/guide/installing-moodle/</loc>
+    <lastmod>2025-03-31T15:12:30+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/docs/guide/create-an-empty-database/</loc>
+    <lastmod>2025-03-31T15:12:30+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/docs/guide/moodledata/</loc>
+    <lastmod>2025-03-31T15:12:30+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/docs/guide/moodle-install/</loc>
+    <lastmod>2025-03-31T15:12:30+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/docs/guide/detailed-guide/</loc>
+    <lastmod>2025-03-31T15:12:30+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-03-31T12:10:00+05:30</lastmod>
+    <lastmod>2025-03-31T15:12:30+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
+    <lastmod>2025-03-31T15:12:30+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
@@ -19,6 +29,7 @@
     <lastmod>2025-03-31T12:10:00+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/docs/getting-started/</loc>
+    <lastmod>2025-03-31T15:12:30+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/docs/guide/</loc>
     <lastmod>2025-03-31T12:10:00+05:30</lastmod>

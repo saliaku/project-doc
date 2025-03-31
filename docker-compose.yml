@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  hugo:
+    image: klakegg/hugo:latest
+    volumes:
+      - /home/ubuntu/project-doc:/public   # Map your Hugo website to /src in the container
+      - /var/www/html/doc:/public   # Map the public directory of the site to /var/www/html/doc
+    ports:
+      - "1313:1313"   # Expose port 1313 (default Hugo port for local development)
+    command: ["hugo", "server", "--bind", "0.0.0.0", "--baseURL", "http://localhost:1313"]
