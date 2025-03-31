@@ -1,11 +1,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Project Doc – Guide</title>
+    <title>Final Year Project – Guide</title>
     <link>http://localhost:1313/docs/guide/</link>
-    <description>Recent content in Guide on Project Doc</description>
+    <description>Recent content in Guide on Final Year Project</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 31 Mar 2025 11:04:13 +0530</lastBuildDate>
     
 	  <atom:link href="http://localhost:1313/docs/guide/index.xml" rel="self" type="application/rss+xml" />
     
@@ -16,11 +15,11 @@
     
     
     <item>
-      <title>Organize Files</title>
-      <link>http://localhost:1313/docs/guide/organize-files/</link>
-      <pubDate>Mon, 31 Mar 2025 11:04:20 +0530</pubDate>
+      <title></title>
+      <link>http://localhost:1313/docs/guide/configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/docs/guide/organize-files/</guid>
+      <guid>http://localhost:1313/docs/guide/configuration/</guid>
       <description>
         
         

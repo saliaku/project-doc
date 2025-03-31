@@ -1,9 +1,9 @@
-+++
-title = 'Docs'
-date = 2025-03-31T11:02:58+05:30
-draft = true
-+++
+---
+title: Documentation
+cascade:
+  type: docs
+---
 
 
-#Welcome to the project website
+# Welcome to the project website
 

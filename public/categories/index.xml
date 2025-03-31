@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Project Doc – Categories</title>
+    <title>Final Year Project – Categories</title>
     <link>http://localhost:1313/categories/</link>
-    <description>Recent content in Categories on Project Doc</description>
+    <description>Recent content in Categories on Final Year Project</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     

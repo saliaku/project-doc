@@ -1,10 +1,63 @@
 baseURL: https://example.org/
 languageCode: en-us
-title: Project Doc
+title: Final Year Project
 
 module:
   imports:
     - path: github.com/imfing/hextra
+
+
+
+
+# params:
+#   navbar:
+#     displayTitle: true
+    # displayLogo: true
+    # logo:
+    #   path: images/logo.svg
+    #   dark: images/logo-dark.svg 
+    #   #logo can be added in the static/images folder
+    #   link: /
+    #   width: 40
+    #   height: 20
+    # links:
+    # - name: "Home"
+    #   url: "/"
+    # - name: "About"
+    #   url: "/about/"
+    # - name: "Contact"
+    #   url: "/contact/"
+
+  params:
+  navbar:
+    displayTitle: true
+    displayLogo: true
+    logo:
+      path: "images/logo.svg"
+      dark: "images/logo-dark.svg"
+      link: "/"
+      width: 40
+      height: 20
+    links:
+      - name: "Home"
+        url: "/"
+      - name: "About"
+        url: "/about/"
+      - name: "Projects"
+        url: "/projects/"
+      - name: "Contact"
+        url: "/contact/"
+    searchEnabled: true
+    stickyNavbar: true
+    transparentBackground: false
+    darkModeToggle: true
+    navbarPosition: top
+    hamburgerMenu: true
+    ctaButton:
+      text: "Get Started"
+      link: "/get-started/"
+
+
 
 menu:
   main:
@@ -23,36 +76,23 @@ menu:
         type: search
     - name: GitHub
       weight: 5
-      url: "https://github.com/imfing/hextra"
+      url: "https://github.com/saliaku/project-doc"
       params:
         icon: github
 
 
-params:
-  navbar:
-    displayTitle: true
-    displayLogo: true
-    logo:
-      path: images/logo.svg
-      dark: images/logo-dark.svg 
-      #logo can be added in the static/images folder
-      link: /
-      width: 40
-      height: 20
-
-
-menu:
-  sidebar:
-    - name: More
-      params:
-        type: separator
-      weight: 1
-    - name: "About"
-      pageRef: "/about"
-      weight: 2
-    - name: "Hugo Docs ↗"
-      url: "https://gohugo.io/documentation/"
-      weight: 3
+# menu:
+#   sidebar:
+#     - name: More
+#       params:
+#         type: separator
+#       weight: 1
+#     - name: "About"
+#       pageRef: "/about"
+#       weight: 2
+#     - name: "Hugo Docs ↗"
+#       url: "https://gohugo.io/documentation/"
+#       weight: 3
 
 
 params:
