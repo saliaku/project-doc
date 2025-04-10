@@ -21,7 +21,7 @@ The framework is proposed to be built around three core components: **user profi
    
 3. **Personalized Learning Paths**: Learning paths are dynamically generated using Genetic Algorithms (GA), ensuring optimal sequencing of lessons while adhering to dependency relationships between topics using a technique called Layered Topological Sort (LTS).
 
-Through this project, we hope to go beyond traditional education by empowering neurodiverse learners, providing them with the tools they need to succeed in a supportive and inclusive environment. By leveraging ML technologies, the framework ensures that every student receives a customized and engaging learning experience, regardless of geographical limitations or individual challenges.
+Through this project, we hope to go beyond traditional education by empowering neurodiverse learners, providing them with the tools they need to succeed in a supportive and inclusive environment. By leveraging ML technologies, the framework ensures that every student receives a customized and engaging learning experience, regardless of geographical limitations or individual challenges. 
 
 ## Our Motivation
 
@@ -45,16 +45,14 @@ Our e-learning framework directly addresses the challenges faced by neurodiverse
    
 4. **Real-Time Feedback and Adaptive Learning**: Through ML, the system monitors student progress and provides real-time feedback, adapting learning paths based on their performance and engagement levels. This ensures continuous improvement and a more interactive experience.
 
-By focusing on inclusivity, adaptability, and accessibility, our project transforms the way education is delivered to neurodiverse students, empowering them to overcome traditional learning challenges and unlock their full potential.
+By focusing on inclusivity, adaptability, and accessibility, our project transforms the way education is delivered to neurodiverse students, empowering them to overcome traditional learning challenges and unlock their full potential. The project currently focusses on personalization, with extension to including neurodiverse students a future scope.
 
 ## For Parents
 
-As parents, you play a pivotal role in shaping your child's educational journey. Our framework is designed to empower you with actionable insights and tools to support your child's unique learning needs. Recognizing the challenges faced by neurodiverse learners, we aim to bridge the gap between educational expectations and individual capabilities, fostering an environment of growth and achievement.
+As parents, you play a pivotal role in shaping your child's educational journey. Our framework is designed to empower you with actionable insights and tools to support your child's unique learning needs. Recognizing the challenges faced by neurodiverse learners, we aim to bridge the gap between educational expectations and individual capabilities, fostering an environment of growth and achievement. This project is a small step is personalizing the learning experience for the students, bringing it one step closer to including neurodiverse students.
 
 The platform provides a detailed overview of your child’s learning preferences, progress, and areas of improvement through personalized reports and dashboards. These insights are generated using advanced Machine Learning (ML) algorithms that analyze patterns in learning behavior, cognitive abilities, and performance metrics. By understanding how your child learns best, you can better support their academic and personal growth.
 
-Our framework emphasizes flexibility and adaptability, offering recommendations tailored to your child’s strengths and challenges. Whether it’s suggesting multimodal content like videos, interactive activities, or gamified lessons, the system ensures that your child remains engaged and motivated throughout their learning journey. Additionally, it highlights areas where additional support might be needed, allowing you to intervene and provide guidance at the right time.
-
-For parents of neurodiverse learners, the framework is especially beneficial in addressing common challenges such as maintaining focus, managing sensory inputs, and navigating complex topics. By presenting content in an accessible and digestible manner, it helps reduce frustration and builds your child’s confidence in tackling new concepts. This not only improves academic performance but also nurtures a positive attitude toward learning.
+Our framework emphasizes flexibility and adaptability, offering recommendations tailored to your child’s strengths and challenges. Whether it’s suggesting multimodal content like videos, interactive activities, or gamified lessons, the system ensures that your child remains engaged and motivated throughout their learning journey. 
 
 Ultimately, our framework is not just about enhancing learning outcomes; it’s about creating a collaborative ecosystem where parents and educators work together to unlock each child’s potential. With this platform, you have a partner in your child’s education, ensuring that they receive the support they need to thrive in an inclusive, personalized, and empowering learning environment.
