@@ -1,5 +1,5 @@
 ---
-title: Guide
+title: Moodle Installation Guide
 cascade:
   type: docs
 ---
