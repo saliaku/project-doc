@@ -11,14 +11,14 @@ This guide will walk you through the steps to install and set up a Moodle server
 
 ## Prerequisites
 
-Before starting, ensure you have the following:
+Before starting the moodle installation, ensure you have the following:
 
 - A Linux server (Ubuntu is used in this guide).
 - A user account with root privileges.
 - Basic knowledge of the terminal and SSH (if you're installing remotely).
 - A working LAMP stack (Linux, Apache, MySQL, PHP).
 
-If you don't have LAMP installed, follow these steps first:
+If you don't have LAMP installed, follow the below steps first.
 
 ## Moodle Hardware Requirements
 

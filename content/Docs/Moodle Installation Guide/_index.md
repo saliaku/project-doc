@@ -5,4 +5,4 @@ cascade:
 ---
 
 
-With all Moodle prerequisites in place, we can now proceed with the installation. The steps below outline the complete installation process.
+With all Moodle prerequisites in place, we can now proceed with the installation. The upcoming steps outline the complete installation process.
