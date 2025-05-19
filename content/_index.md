@@ -1,5 +1,5 @@
 ---
-title: 
+title: Genetic Algorithms based adaptive e-learning framework
 cascade:
   type: default
 ---
