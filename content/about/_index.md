@@ -9,7 +9,7 @@ cascade:
 
 This assessment aims to collect data on learners' readability levels, information processing abilities, and working memory capacity. The information gathered will be used solely to train a model supporting an adaptive E-learning framework, which will leverage Genetic Algorithms (GA) to tailor educational resources to meet each learner's unique needs, enhancing engagement and learning effectiveness. Your responses are confidential, will not be shared, and will not be used for any other purposes.
 
-## About the Project
+## Framework Overview
 
 In a world where traditional education systems struggle to cater to the diverse needs of neurodiverse students, our project seeks to create an innovative e-learning framework that prioritizes inclusivity, adaptability, and personalization. By harnessing the power of Machine Learning (ML), this framework aims to provide a dynamic, tailored educational experience for students with varying cognitive abilities and learning styles.
 
