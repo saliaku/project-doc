@@ -18,7 +18,7 @@ Moodle requires a directory to store all of its files, including uploaded files,
 {{< /callout >}}
 
 
-## Example (Unix/Linux):
+## Example (Unix/Linux)
 
 To create the `moodledata` directory and set the correct permissions for the web server user, follow these steps:
 

@@ -12,7 +12,7 @@ Welcome to the documentation page of our final year project! This project center
 - Multimodal content delivery for varied learning styles
 - Real-time feedback and adaptive learning
 
-Our goal is to break traditional educational barriers and create an engaging, supportive, and accessible environment for all learners, regardless of their individual challenges. The proposed framework incorporates Genetic Algorithms to generate personalized lesson plans that align with each student's unique learning style. For a deeper understanding of the underlying concepts, you can refer to the theoretical background of the framework here.
+Our goal is to break traditional educational barriers and create an engaging, supportive, and accessible environment for all learners, regardless of their individual challenges. The proposed framework incorporates Genetic Algorithms to generate personalized lesson plans that align with each student's unique learning style. For a deeper understanding of the underlying concepts, you can refer to the theoretical background of the framework [here](../content/docs/final_doc.pdf).
 
 ## Explore More
 
