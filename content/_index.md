@@ -17,6 +17,6 @@ Our goal is to break traditional educational barriers and create an engaging, su
 ## Explore More
 
 - [Documentation](/docs) – Detailed guide about the prototype setup, including technical requirements, structure, and more.
-- [About the Project](/About) – Learn more about the purpose, motivation, and the benefits of this project.
+- [About the Project](/about) – Learn more about the purpose, motivation, and the benefits of this project.
 
 Thank you for visiting! Feel free to explore and learn more about the innovative work we're doing to transform education for neurodiverse students.
