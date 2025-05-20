@@ -5,7 +5,8 @@ cascade:
 ---
 
 
-Welcome to the documentation page of our final year project! This project centers on developing an adaptive e-learning framework tailored to support the diverse needs of neurodiverse learners. By leveraging advanced machine learning techniques, it aims to offer personalized and inclusive learning experiences. The framework has been prototyped using Moodle, and this documentation outlines the complete process behind its implementation.
+Welcome to the documentation page of our final year project! This project centers on developing an adaptive e-learning framework tailored to support the diverse needs of neurodiverse learners. By leveraging advanced machine learning techniques, it aims to offer personalized and inclusive learning experiences. The framework has been prototyped using Moodle, and this documentation is intended to guide others in replicating the system from setup to implementation.
+
 
 ## Key Features
 - Personalized learning paths using **Genetic Algorithms (GA)**
