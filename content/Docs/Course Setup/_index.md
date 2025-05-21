@@ -4,4 +4,4 @@ cascade:
   type: default
 ---
 
-Add the steps fo rsetting up course here.
+Add the steps for setting up course here.

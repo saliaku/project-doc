@@ -4,7 +4,7 @@ cascade:
   type: default
 ---
 
-#About the project
+# About the project
 
 ## Purpose
 
