@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Final Year Project – Documentation</title>
+    <title>Final Year Project – </title>
     <link>http://localhost:1313/docs/</link>
-    <description>Recent content in Documentation on Final Year Project</description>
+    <description>Recent content on Final Year Project</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
@@ -16,19 +16,21 @@
     
     <item>
       <title></title>
-      <link>http://localhost:1313/docs/guide/installing-moodle/</link>
+      <link>http://localhost:1313/docs/moodle-installation-guide/downloading-moodle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/docs/guide/installing-moodle/</guid>
+      <guid>http://localhost:1313/docs/moodle-installation-guide/downloading-moodle/</guid>
       <description>
         
         
         &lt;h3&gt;Download and Copy Files into Place&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;download-and-copy-files-into-place&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#download-and-copy-files-into-place&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;You have two options for getting Moodle:&lt;/p&gt;
+    &lt;a href=&#34;#download-and-copy-files-into-place&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;You have two options for downloading Moodle:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Pull the Code from the Git Repository&lt;/strong&gt;&lt;br&gt;
-This method is recommended for developers and makes upgrading very simple. To pull the Moodle code, run the following command:&lt;/p&gt;
+For this project, Moodle was downloaded via GitHub.
+This method is recommended for developers as it simplifies the upgrade process and version control.
+To pull the Moodle code, run the following command:&lt;/p&gt;
 &lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
 
 &lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git clone -b MOODLE_405_STABLE git://git.moodle.org/moodle.git&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
@@ -51,6 +53,10 @@ This method is recommended for developers and makes upgrading very simple. To pu
   &lt;/div&gt;
 &lt;/div&gt;
 
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Download the required version from official website&lt;/strong&gt;
+You can download your required version from &lt;a href=&#34;http://moodle.org/downloads&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://moodle.org/downloads&lt;/a&gt; and unzip the folder.&lt;/li&gt;
+&lt;/ol&gt;
 &lt;h3&gt;Secure the Moodle Files&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;secure-the-moodle-files&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#secure-the-moodle-files&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;It is vital that the files are not writeable by the web server user. For example, on Unix/Linux (as root):&lt;/p&gt;
 &lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
@@ -72,10 +78,10 @@ This method is recommended for developers and makes upgrading very simple. To pu
     
     <item>
       <title>Create an Empty Database</title>
-      <link>http://localhost:1313/docs/guide/create-an-empty-database/</link>
+      <link>http://localhost:1313/docs/moodle-installation-guide/create-an-empty-database/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/docs/guide/create-an-empty-database/</guid>
+      <guid>http://localhost:1313/docs/moodle-installation-guide/create-an-empty-database/</guid>
       <description>
         
         
@@ -92,10 +98,10 @@ This method is recommended for developers and makes upgrading very simple. To pu
     
     <item>
       <title></title>
-      <link>http://localhost:1313/docs/guide/moodledata/</link>
+      <link>http://localhost:1313/docs/moodle-installation-guide/moodledata/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/docs/guide/moodledata/</guid>
+      <guid>http://localhost:1313/docs/moodle-installation-guide/moodledata/</guid>
       <description>
         
         
@@ -114,7 +120,7 @@ This method is recommended for developers and makes upgrading very simple. To pu
   &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;h2&gt;Example (Unix/Linux):&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;example-unixlinux&#34;&gt;&lt;/span&gt;
+&lt;h2&gt;Example (Unix/Linux)&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;example-unixlinux&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#example-unixlinux&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;To create the &lt;code&gt;moodledata&lt;/code&gt; directory and set the correct permissions for the web server user, follow these steps:&lt;/p&gt;
 &lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
 
@@ -138,10 +144,10 @@ This method is recommended for developers and makes upgrading very simple. To pu
     
     <item>
       <title></title>
-      <link>http://localhost:1313/docs/guide/moodle-install/</link>
+      <link>http://localhost:1313/docs/moodle-installation-guide/installing-moodle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/docs/guide/moodle-install/</guid>
+      <guid>http://localhost:1313/docs/moodle-installation-guide/installing-moodle/</guid>
       <description>
         
         
@@ -180,14 +186,14 @@ This method is recommended for developers and makes upgrading very simple. To pu
     
     <item>
       <title></title>
-      <link>http://localhost:1313/docs/guide/detailed-guide/</link>
+      <link>http://localhost:1313/docs/moodle-installation-guide/detailed-guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/docs/guide/detailed-guide/</guid>
+      <guid>http://localhost:1313/docs/moodle-installation-guide/detailed-guide/</guid>
       <description>
         
         
-        &lt;h1&gt;Detailed Guide on Installing Moodle&lt;/h1&gt;&lt;p&gt;For a comprehensive and detailed guide on how to install Moodle, including system requirements, setup instructions, and troubleshooting, please refer to the official Moodle documentation:&lt;/p&gt;
+        &lt;h1&gt;Detailed Guide on Installing Moodle&lt;/h1&gt;&lt;p&gt;For a comprehensive and detailed guide on how to install Moodle, including system requirements, setup instructions, and troubleshooting, please refer to the official Moodle documentation given:&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://docs.moodle.org/405/en/Installing_Moodle#Requirements&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Installing Moodle - Moodle Documentation&lt;/a&gt;&lt;/p&gt;
 
       </description>
