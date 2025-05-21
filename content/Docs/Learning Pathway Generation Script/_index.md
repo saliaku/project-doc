@@ -2,5 +2,5 @@
 title: Learning Pathway Generation Script
 cascade:
 type: default
-weight: 5
+weight: 6
 ---
