@@ -11,11 +11,12 @@ This section details the database tables used in the project. There are two data
 - fyp: Database created to store required information of the implementation 
 
 
+## moodle
+
+
 {{< callout type="info" >}}
   Note: moodle tables have many built-in fields. The schema of only the required section of tables is provided.
 {{< /callout >}}
-
-## moodle
 
 ### Table: `mdl_user`
 
@@ -69,3 +70,67 @@ This section details the database tables used in the project. There are two data
 |----------------------|----------------------|-------------------------------------------------|
 | `id`                 | INT (AUTO INCREMENT) | Auto increment identifier                       |
 | `questioncategoryid` | INT                  | Category of the question in the question bank   |
+
+
+## fyp
+
+### Table: `topics`
+
+| **Field**        | **Data Type**        | **Description**                                  |
+|------------------|----------------------|--------------------------------------------------|
+| `id`             | INT (AUTO INCREMENT) | Auto increment identifier                        |
+| `topic_name`     | VARCHAR              | Name of the topic                                |
+| `difficulty`     | FLOAT                | Difficulty value of the topic                    |
+| `num_questions`  | INT                  | Number of quiz questions to be given for topic   |
+
+---
+
+### Table: `lo`
+
+| **Field**      | **Data Type**        | **Description**                                   |
+|----------------|----------------------|---------------------------------------------------|
+| `id`           | INT (AUTO INCREMENT) | Auto increment identifier                         |
+| `topic`        | INT                  | Foreign key – ID in `topics`                      |
+| `v`            | FLOAT                | Visual score                                      |
+| `a`            | FLOAT                | Auditory score                                    |
+| `t`            | FLOAT                | Textual score                                     |
+| `ip`           | FLOAT                | Information processing score                      |
+| `read_metric`  | FLOAT                | Readability score                                 |
+| `path`         | TEXT                 | Path to the resource in the server                |
+
+---
+
+### Table: `clusters`
+
+| **Field**     | **Data Type**        | **Description**                                   |
+|---------------|----------------------|---------------------------------------------------|
+| `id`          | INT (AUTO INCREMENT) | Auto increment identifier                         |
+| `centroid`    | LONG TEXT            | Centroid of the cluster as an array               |
+| `gene_pool`   | LONG TEXT            | Gene pool of the cluster as JSON                  |
+
+---
+
+### Table: `students`
+
+| **Field**          | **Data Type**        | **Description**                                                        |
+|--------------------|----------------------|------------------------------------------------------------------------|
+| `user_id`          | INT                  | Foreign key – ID in `mdl_user`                                         |
+| `path`             | LONG TEXT            | Current learning pathway of the student                               |
+| `cluster_id`       | INT                  | Foreign key – ID of `clusters`                                         |
+| `difficulty`       | LONG TEXT            | Difficulty values topic-wise as JSON                                  |
+| `gene_space`       | LONG TEXT            | Gene space of the student as JSON                                     |
+| `explored_genes`   | LONG TEXT            | Genes explored by GA in ascending order of cost, arranged topic-wise  |
+| `learning_costs`   | LONG TEXT            | Genes and their learning costs for the student as JSON                |
+| `completed`        | LONG TEXT            | Topics completed by the student as an array                           |
+| `stored_path`      | LONG TEXT            | Initial learning path generated for the student                       |
+
+---
+
+### Table: `quiz_attempts`
+
+| **Field**     | **Data Type**        | **Description**                                            |
+|---------------|----------------------|------------------------------------------------------------|
+| `student_id`  | INT                  | Foreign key – ID in `mdl_user`                             |
+| `topic_id`    | INT                  | Foreign key – ID in `topics`                               |
+| `attempts`    | INT                  | Quiz attempts of the user on the given topic               |
+| `scores`      | LONG TEXT            | Scores obtained by the student in quiz attempts (JSON)     |
