@@ -30,3 +30,42 @@ This section details the database tables used in the project. There are two data
 | `wma`     | FLOAT                | Working memory score for auditory content                   |
 | `wmt`     | FLOAT                | Working memory score for textual content                    |
 | `attempt` | SMALL INT            | Indicates whether `mdl_poll_user.py` has generated a path for the user |
+
+
+### Table: `mdl_questions`
+
+| **Field**         | **Data Type**        | **Description**                                               |
+|-------------------|----------------------|---------------------------------------------------------------|
+| `id`              | INT (AUTO INCREMENT) | Auto increment identifier                                     |
+| `questiontext`    | TEXT                 | Text of the question                                          |
+| `generalfeedback` | TEXT                 | Feedback to be given with solution                            |
+| `qtype`           | TEXT                 | Indicates question type – `multichoice` / `truefalse`        |
+
+
+### Table: `mdl_question_answers`
+
+| **Field**   | **Data Type**        | **Description**                                 |
+|-------------|----------------------|-------------------------------------------------|
+| `id`        | INT (AUTO INCREMENT) | Auto increment identifier                       |
+| `question`  | INT                  | Foreign key – ID in `mdl_questions`             |
+| `answer`    | TEXT                 | Choices for the question                        |
+| `fraction`  | FLOAT                | Score of the choice                             |
+
+---
+
+### Table: `mdl_question_versions`
+
+| **Field**             | **Data Type**        | **Description**                                 |
+|-----------------------|----------------------|-------------------------------------------------|
+| `id`                  | INT (AUTO INCREMENT) | Auto increment identifier                       |
+| `questionbankentryid` | INT                  | Foreign key – ID in `mdl_question_bank_entries` |
+| `questionid`          | INT                  | Foreign key – ID in `mdl_questions`             |
+
+---
+
+### Table: `mdl_question_bank_entries`
+
+| **Field**            | **Data Type**        | **Description**                                 |
+|----------------------|----------------------|-------------------------------------------------|
+| `id`                 | INT (AUTO INCREMENT) | Auto increment identifier                       |
+| `questioncategoryid` | INT                  | Category of the question in the question bank   |
