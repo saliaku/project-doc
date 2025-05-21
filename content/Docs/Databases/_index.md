@@ -52,7 +52,6 @@ This section details the database tables used in the project. There are two data
 | `answer`    | TEXT                 | Choices for the question                        |
 | `fraction`  | FLOAT                | Score of the choice                             |
 
----
 
 ### Table: `mdl_question_versions`
 
@@ -62,7 +61,6 @@ This section details the database tables used in the project. There are two data
 | `questionbankentryid` | INT                  | Foreign key – ID in `mdl_question_bank_entries` |
 | `questionid`          | INT                  | Foreign key – ID in `mdl_questions`             |
 
----
 
 ### Table: `mdl_question_bank_entries`
 
@@ -83,7 +81,6 @@ This section details the database tables used in the project. There are two data
 | `difficulty`     | FLOAT                | Difficulty value of the topic                    |
 | `num_questions`  | INT                  | Number of quiz questions to be given for topic   |
 
----
 
 ### Table: `lo`
 
@@ -98,7 +95,6 @@ This section details the database tables used in the project. There are two data
 | `read_metric`  | FLOAT                | Readability score                                 |
 | `path`         | TEXT                 | Path to the resource in the server                |
 
----
 
 ### Table: `clusters`
 
@@ -108,7 +104,6 @@ This section details the database tables used in the project. There are two data
 | `centroid`    | LONG TEXT            | Centroid of the cluster as an array               |
 | `gene_pool`   | LONG TEXT            | Gene pool of the cluster as JSON                  |
 
----
 
 ### Table: `students`
 
@@ -123,8 +118,6 @@ This section details the database tables used in the project. There are two data
 | `learning_costs`   | LONG TEXT            | Genes and their learning costs for the student as JSON                |
 | `completed`        | LONG TEXT            | Topics completed by the student as an array                           |
 | `stored_path`      | LONG TEXT            | Initial learning path generated for the student                       |
-
----
 
 ### Table: `quiz_attempts`
 
