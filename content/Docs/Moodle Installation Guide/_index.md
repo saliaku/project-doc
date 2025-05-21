@@ -1,7 +1,8 @@
 ---
 title: Moodle Installation Guide
 cascade:
-  type: docs
+type: docs
+weight: 2
 ---
 
 

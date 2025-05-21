@@ -1,7 +1,7 @@
 ---
 title: 
 cascade:
-  type: default
+type: default
 ---
 
 # Implementation
