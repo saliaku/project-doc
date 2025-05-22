@@ -8,3 +8,4 @@ weight: 4
 Add website details here.
 - section-wise specifications
 - scoring specifications for each section
+- range of scores taken
