@@ -10,3 +10,5 @@ Add website details here.
 - scoring specifications for each section
 - range of scores taken
 - mention it correctly
+- changes r annoying
+- change is good ig
