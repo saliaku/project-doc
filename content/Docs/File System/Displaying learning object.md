@@ -5,7 +5,8 @@ type: default
 weight: 2
 ---
 
-## get_next_lo.py
+After a learning path is created by `script.py`, it needs to be presented to the student. The script `get_next_lo.py` retrieves the next learning object in the path for that student.
+
 
 ```python
 #get_next_lo.py
@@ -67,8 +68,9 @@ print(json.dumps({
     "topic_name": topic_name
 }))
 ```
+Download [get_next_lo.py](/Files/get_next_lo.py) from here. <br>
+`view.php` calls `get_next_lo.py` and displays the retrieved learning object to the student.
 
-## view.php
 
 ```python
 # view.php
@@ -110,9 +112,6 @@ if (!$path || $path === "none") {
     exit;
 }
 
-
-
-
 // Display topic title centered in dark blue, bold
 echo "<div style='width: 100%; text-align: center; margin: 30px 0 20px;'>
         <h3 style='color: #003366; font-weight: bold; font-size: 32px;'>
@@ -152,6 +151,6 @@ echo "<div style='text-align: center; margin-top: 40px;'>
         </a>
       </div>";
 
-
 ?>
 ```
+Download [view.php](/Files/view.php) from here.

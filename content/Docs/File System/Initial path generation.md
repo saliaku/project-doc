@@ -5,7 +5,7 @@ type: default
 weight: 1
 ---
 
-## poll_mdl_user.py
+Once the profiling assessment is completed, the code provided below triggers the path generation script, utilizing the obtained profiling scores to personalize the learning path.
 
 ```python
 # poll_mdl_user.py
@@ -84,9 +84,10 @@ def main():
 if __name__ == "__main__":
     main()
 ```
-Download [poll_mdl_user.py](/Files/poll_mdl_user.py) from here
+Download [poll_mdl_user.py](/Files/poll_mdl_user.py) from here.
 
-## Functions of Genetic Algorithms
+
+The functions related to the Genetic Algorithm, along with commonly used database operations, are consolidated in the `GA_functions.py` file.
 
 ```python
 # GA_functions.py
@@ -889,11 +890,11 @@ def convert_np(obj):
     else:
         return obj
 ```
+Download [GA_functions.py](/Files/GA_functions.py) from here.
 
 
 
-
-## Python script to generate a learning path
+The script below, triggered by `mdl_poll_user.py`, generates a personalized learning path by retrieving profiling assessment scores from the database and utilizing the Genetic Algorithm functions defined in the `GA_functions.py` file.
 
 ```python
 # script.py
@@ -990,6 +991,6 @@ if __name__ == "__main__":
             print("Usage: script.py <userid>")
         sys.exit(0)
 ```
-
+Download [script.py](/Files/script.py) from here.
 
 

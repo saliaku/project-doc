@@ -5,7 +5,7 @@ type: default
 weight: 3
 ---
 
-## get_quiz_questions.py
+This page details the files responsible for presenting the post-assessment quizzes after each topic. The script below, get_quiz_questions.py, retrieves quiz questions from the database based on the current topic.
 
 ```python
 #get_quiz_questions.py
@@ -108,8 +108,8 @@ except Exception as e:
     print(json.dumps({"error": f"Error fetching questions: {str(e)}"}))
     sys.exit()
 ```
-
-## quiz.php
+Download [get_quiz_questions.py](/Files/get_quiz_questions.py) from here.
+The file below uses `get_quiz_questions.py` to fetch the relevant questions and renders the quiz page accordingly.
 
 ```php
 //quiz.php
@@ -203,8 +203,120 @@ echo "</form>";
 echo "</div>";
 ?>
 ```
+Download [quiz.php](/Files/quiz.php) from here.
+Depending on the quiz score achieved, `Quizupdate.py` adjusts the personalized learning path and updates the database accordingly.
 
-## quiz_submit.php
+
+```python
+#Quizupdate.py
+
+#!/usr/bin/env python3
+
+import sys
+import variables
+from GA_functions import *
+
+
+if __name__ == "__main__":
+    if len(sys.argv) < 4:
+        sys.exit(1)
+
+    user_id = int(sys.argv[1])
+    current_topic= int(sys.argv[2])
+    score = float(sys.argv[3])
+    
+
+    # Fetch student profile
+    student_profile, path = fetch_student_profile(user_id)
+    if student_profile is None:
+        sys.exit(1)
+    variables.student_profile= student_profile
+
+    # Fetch supporting data
+    clusters = fetch_clusters()
+    learning_objects, _ = fetch_learning_objects()
+    variables.learning_objects= learning_objects
+    
+
+
+    # Fetch attempts count from quiz_attempts table
+    attempts = fetch_attempts(user_id, current_topic)
+
+    # Update score and path
+    new_path = update_score(student_profile, score, attempts, path, clusters, variables.max_distance, learning_objects)
+
+    # Save updated student profile
+    update_student_profile(user_id, student_profile, new_path)
+```
+Download [Quizupdate.py](/Files/Quizupdate.py) from here.
+The below file stores the obtained scores in the database.
+
+
+```python
+#scoring.py
+
+import pymysql
+import json
+import sys
+import variables
+
+# Usage: python store_score.py <userid> <topic_id> <score>
+userid = int(sys.argv[1])
+topic_id = int(sys.argv[2])
+score = float(sys.argv[3])  # score can be a float
+
+try:
+    conn = pymysql.connect(
+        host=variables.HOST,
+        user=variables.USER,
+        password=variables.PASS,
+        database='fyp'
+    )
+    cursor = conn.cursor()
+
+    # Fetch existing scores and attempts for this user-topic
+    cursor.execute("SELECT scores, attempts FROM quiz_attempts WHERE student_id=%s AND topic_id=%s", (userid, topic_id))
+    row = cursor.fetchone()
+
+    if row:
+        current_scores, current_attempts = row
+        if current_scores is None:
+            scores_dict = {}
+        else:
+            try:
+                scores_dict = json.loads(current_scores)
+            except json.JSONDecodeError:
+                scores_dict = {}
+
+        scores_dict[str(current_attempts)] = score  # Use current attempt number as key (string)
+
+        # Update only the scores
+        cursor.execute(
+            "UPDATE quiz_attempts SET scores=%s WHERE student_id=%s AND topic_id=%s",
+            (json.dumps(scores_dict), userid, topic_id)
+        )
+        conn.commit()
+        print(json.dumps({"status": "updated", "attempt": current_attempts, "score": score}))
+    else:
+        # First time inserting — default attempt is 1
+        scores_dict = {"1": score}
+        cursor.execute(
+            "INSERT INTO quiz_attempts (student_id, topic_id, scores, attempts) VALUES (%s, %s, %s, %s)",
+            (userid, topic_id, json.dumps(scores_dict), 1)
+        )
+        conn.commit()
+        print(json.dumps({"status": "inserted", "attempt": 1, "score": score}))
+
+    cursor.close()
+    conn.close()
+
+except Exception as e:
+    print(json.dumps({"error": str(e)}))
+    sys.exit()
+```
+Download [scoring.py](/Files/scoring.py) from here.
+Once the quiz is submitted, control is passed to `quiz_submit.php` for processing the results, which in turn invokes `scoring.py` and `Quizupdate.py`.
+
 
 ```php
 //quiz_submit.php
@@ -372,111 +484,6 @@ if (isset($_SESSION['quiz_submitted'])) {
 }
 ?>
 ```
-
-## Quizupdate.py
-```python
-#Quizupdate.py
-
-#!/usr/bin/env python3
-
-import sys
-import variables
-from GA_functions import *
+Download [quiz_submit.php](/Files/quiz_submit.php) from here.
 
 
-if __name__ == "__main__":
-    if len(sys.argv) < 4:
-        sys.exit(1)
-
-    user_id = int(sys.argv[1])
-    current_topic= int(sys.argv[2])
-    score = float(sys.argv[3])
-    
-
-    # Fetch student profile
-    student_profile, path = fetch_student_profile(user_id)
-    if student_profile is None:
-        sys.exit(1)
-    variables.student_profile= student_profile
-
-    # Fetch supporting data
-    clusters = fetch_clusters()
-    learning_objects, _ = fetch_learning_objects()
-    variables.learning_objects= learning_objects
-    
-
-
-    # Fetch attempts count from quiz_attempts table
-    attempts = fetch_attempts(user_id, current_topic)
-
-    # Update score and path
-    new_path = update_score(student_profile, score, attempts, path, clusters, variables.max_distance, learning_objects)
-
-    # Save updated student profile
-    update_student_profile(user_id, student_profile, new_path)
-````
-
-## scoring.py
-
-```python
-#scoring.py
-
-import pymysql
-import json
-import sys
-import variables
-
-# Usage: python store_score.py <userid> <topic_id> <score>
-userid = int(sys.argv[1])
-topic_id = int(sys.argv[2])
-score = float(sys.argv[3])  # score can be a float
-
-try:
-    conn = pymysql.connect(
-        host=variables.HOST,
-        user=variables.USER,
-        password=variables.PASS,
-        database='fyp'
-    )
-    cursor = conn.cursor()
-
-    # Fetch existing scores and attempts for this user-topic
-    cursor.execute("SELECT scores, attempts FROM quiz_attempts WHERE student_id=%s AND topic_id=%s", (userid, topic_id))
-    row = cursor.fetchone()
-
-    if row:
-        current_scores, current_attempts = row
-        if current_scores is None:
-            scores_dict = {}
-        else:
-            try:
-                scores_dict = json.loads(current_scores)
-            except json.JSONDecodeError:
-                scores_dict = {}
-
-        scores_dict[str(current_attempts)] = score  # Use current attempt number as key (string)
-
-        # Update only the scores
-        cursor.execute(
-            "UPDATE quiz_attempts SET scores=%s WHERE student_id=%s AND topic_id=%s",
-            (json.dumps(scores_dict), userid, topic_id)
-        )
-        conn.commit()
-        print(json.dumps({"status": "updated", "attempt": current_attempts, "score": score}))
-    else:
-        # First time inserting — default attempt is 1
-        scores_dict = {"1": score}
-        cursor.execute(
-            "INSERT INTO quiz_attempts (student_id, topic_id, scores, attempts) VALUES (%s, %s, %s, %s)",
-            (userid, topic_id, json.dumps(scores_dict), 1)
-        )
-        conn.commit()
-        print(json.dumps({"status": "inserted", "attempt": 1, "score": score}))
-
-    cursor.close()
-    conn.close()
-
-except Exception as e:
-    print(json.dumps({"error": str(e)}))
-    sys.exit()
-```
