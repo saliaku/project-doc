@@ -109,6 +109,7 @@ except Exception as e:
     sys.exit()
 ```
 Download [get_quiz_questions.py](/Files/get_quiz_questions.py) from here.
+
 The file below uses `get_quiz_questions.py` to fetch the relevant questions and renders the quiz page accordingly.
 
 ```php
@@ -204,6 +205,7 @@ echo "</div>";
 ?>
 ```
 Download [quiz.php](/Files/quiz.php) from here.
+
 Depending on the quiz score achieved, `Quizupdate.py` adjusts the personalized learning path and updates the database accordingly.
 
 
@@ -249,6 +251,7 @@ if __name__ == "__main__":
     update_student_profile(user_id, student_profile, new_path)
 ```
 Download [Quizupdate.py](/Files/Quizupdate.py) from here.
+
 The below file stores the obtained scores in the database.
 
 
@@ -315,6 +318,7 @@ except Exception as e:
     sys.exit()
 ```
 Download [scoring.py](/Files/scoring.py) from here.
+
 Once the quiz is submitted, control is passed to `quiz_submit.php` for processing the results, which in turn invokes `scoring.py` and `Quizupdate.py`.
 
 
