@@ -2,7 +2,7 @@
 title: Databases
 cascade:
 type: default
-weight: 5
+weight: 6
 ---
 
 This section details the database tables used in the project. There are two databases:

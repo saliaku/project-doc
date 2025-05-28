@@ -2,7 +2,7 @@
 title: File System
 cascade:
 type: default
-weight: 6
+weight: 7
 ---
 
 The following files manage the complete process of generating the personalized learning path and delivering it to the student. These are encapsulated within the `learningpath` folder, which contains a custom Moodle plugin developed to provide the necessary functionalities.
@@ -21,7 +21,7 @@ The following files manage the complete process of generating the personalized l
 | `quiz.php`                  | `moodle/local/learningpath`        | Moodle session data                | Displays quiz for the previously taught topic                                                                                                         |
 | `quiz_submit.php`           | `moodle/local/learningpath`        | Moodle session data                | Calculates quiz score and displays solutions                                                                                                          |
 | `get_quiz_questions.py`     | `moodle/local/learningpath`        | Topic id                           | Fetches topic-wise questions from `mdl_question`, `mdl_question_versions`, and `mdl_question_bank_entries`                                           |
-| `dashboard.php`             | `moodle/local/learningpath`        | Moodle user login                  | Displays graphical learning style score distribution                                                                                                  |
+| `dashboard.php`             | `moodle/local/learningpath`        | Moodle user login                  | Displays learning style scores distribution   graphically                                                                                              |
 | `get_dashboard_data.py`     | `moodle/local/learningpath`        | User id                            | Fetches user learning style scores for the dashboard                                                                                                  |
 | `progress.php`              | `moodle/local/learningpath`        | Moodle user login                  | Displays progress using quiz attempts and scores                                                                                                      |
 | `get_progress_data.py`      | `moodle/local/learningpath`        | User id                            | Fetches data about quiz attempts and scores                                                                                                           |
