@@ -6,6 +6,6 @@ type: default
 
 # Implementation
 
-To support the implementation, the following sections offer a step-by-step guide for setting up the Moodle system according to the prototype's specifications. From outlining the necessary system requirements to detailing the installation process and codebase integration, this documentation provides all the information needed to replicate the setup. Begin with the [Getting Started](/docs/getting-started) section to review the prerequisites, then proceed to the [Installation Guide](/docs/moodle-installation-guide) for full configuration instructions.
+To facilitate the implementation, a proof of concept was initially developed, as outlined in the corresponding section. The subsequent sections present a step-by-step guide for configuring the Moodle system in line with the prototype's specifications. This documentation covers everything from system requirements and installation procedures to codebase integration, offering comprehensive instructions for replicating the setup.
 
 
