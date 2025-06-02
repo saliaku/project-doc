@@ -5,10 +5,6 @@ type: default
 weight: 5
 ---
 
-- Type of content gathered
-- How it was gathered (mention resources)
-- Metadata extraction (mention tools used and link code)
-
 ## Content Type 
 
 As part of our implementation, we primarily focused on gathering both textual and video-based educational content relevant to the chapters. The collected resources were carefully reviewed and curated from platforms such as YouTube, Khan Academy and others. After collection, the materials were further edited and customized to align with our specific learning objectives. This included organizing the content into topic-wise segments—such as sources of food, components of food, nutrients, balanced diet, and deficiency diseases—for better clarity, accessibility, and structured learning.
