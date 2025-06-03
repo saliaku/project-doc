@@ -30,10 +30,31 @@ weight: 5
 To evaluate a student’s information processing ability for each Class 6 Science topic, we use Bloom’s Taxonomy. Bloom’s taxonomy categorizes cognitive skills into six levels: Remember, Understand, Apply, Analyze, Evaluate, and Create. Each level reflects a deeper or more complex understanding. For each topic,we assign a score between 0 and 1 at each level based on how well the topic allows or encourages students to engage with that cognitive skill.
 
 The table below shows the ip scores assigned to each topic.
-![Topic-wise IP scores](ip_score.jpg)
+| Topic                | Remember | Understand | Apply | Analyze | Evaluate | Create | Final IP Score |
+|----------------------|----------|------------|-------|---------|----------|--------|----------------|
+| Food                 | 1.0      | 0.8        | 0.4   | 0.3     | 0.2      | 0.1    | 2.8            |
+| Food Sources         | 1.0      | 1.0        | 0.6   | 0.5     | 0.3      | 0.2    | 3.6            |
+| Plant Sources        | 1.0      | 0.9        | 0.7   | 0.5     | 0.3      | 0.2    | 3.6            |
+| Animal Sources       | 1.0      | 0.9        | 0.6   | 0.5     | 0.3      | 0.2    | 3.5            |
+| What do Animals Eat? | 0.8      | 0.9        | 0.7   | 0.7     | 0.4      | 0.3    | 3.8            |
+| Components of Food   | 1.0      | 1.0        | 0.8   | 0.6     | 0.5      | 0.3    | 4.2            |
+| Nutrients            | 1.0      | 1.0        | 0.9   | 0.7     | 0.4      | 0.4    | 4.4            |
+| Deficiency Diseases   | 1.0      | 1.0        | 0.8   | 0.7     | 0.6      | 0.4    | 4.5            |
+| Balanced Diet        | 0.8      | 1.0        | 1.0   | 1.0     | 0.7      | 0.5    | 5.0            |
 
-## AverageDifficulty
+
+## Average Difficulty
  For assigning average difficulty values for the topics, we approached grade 6 science teachers to get their general consensus.With their results we assigned the difficulty scores for each topic.
 
  The table below shows the difficulty scores assigned to each topic.
-![Topic-wise difficulty scores](difficulty.jpg)
+| Topic                  | Difficulty Score |
+|------------------------|------------------|
+| Food                   | 1.2              |
+| Food Sources           | 2.0              |
+| Plant Sources          | 1.5              |
+| Animal Sources         | 2.0              |
+| What do Animals Eat?   | 3.5              |
+| Components of Food     | 4.5              |
+| Nutrients              | 4.5              |
+| Deficiency Diseases     | 3.5              |
+| Balanced Diet          | 5.0              |

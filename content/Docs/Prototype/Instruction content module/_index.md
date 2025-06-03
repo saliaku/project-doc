@@ -20,7 +20,7 @@ Shown below is the topic wise breakup we followed for our implementation and the
 
 ![Course Graph showing topic spplit-up](graph.jpg)
 
-### Food intro
+### Food Introduction
 
 | File Type | Link | Website  |
 |-----------|------|--------------|
@@ -67,13 +67,13 @@ Shown below is the topic wise breakup we followed for our implementation and the
 | text | https://byjus.com/biology/food-deficiency/ | BYJU'S |
 | text | https://www.vedantu.com/biology/food-deficiency | Vedantu |
 
-### Plants
+### Plant-based sources
 
 | File Type | Link | Website  |
 |-----------|------|--------------|
 | video | https://www.youtube.com/watch?v=e0kkwDxQJRs&t=236s | Khan Academy |
 
-### Animals
+### Animal-based sources
 
 | File Type | Link | Website  |
 |-----------|------|--------------|
