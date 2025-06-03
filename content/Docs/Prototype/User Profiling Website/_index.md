@@ -1,5 +1,5 @@
 ---
-title: Use Profiling Website Specifications
+title: User Profiling Website Specifications
 cascade:
 type: default
 weight: 4
